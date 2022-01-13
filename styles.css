@@ -16,14 +16,14 @@
 background-color: black;
 position: relative;
 text-align: center;
+overflow: hidden;
 }
 
 .background-intro-img{
 filter: brightness(0.8) hue-rotate(6deg) opacity(0.99) contrast(1.3) sepia(0.17) saturate(1.4) grayscale(0.08);
 width: 1600px;
-height: 1067px;
-overflow: visible;
-/* overflow: hidden; */
+height: 1000px;
+margin-right:300px;
 }
 
 .tittle-text {
