@@ -15,13 +15,10 @@ function set_size(){
   $('.background-intro-img').width(wid);
   $('.background-intro-img').height(wid*0.6);
   $('.tittle-text').animate({right: "8%"});
-  $('.top-right-slogan').animate({right: "13%", fontSize: "3vw"});
-  $('.services-list').animate({right: "19%", fontSize: "2vw"});
-  $('.equalizer').animate({right: "22%"});
-
   $('.top-right-slogan').animate({right: "13%", top:"20%",fontSize: "3vw"});
   $('.services-list').animate({right: "19%", fontSize: "2vw"});
   $('.equalizer').animate({right: "22%",top:"60%", width:"10%",height: "25%"});
+  $('.navbar_company_section').animate({fontSize: "1.5rem"});
   console.log(" wide screen");
   }
   else{ // this vertical screen : this case shall crop the image from the right
@@ -33,6 +30,7 @@ function set_size(){
     $('.top-right-slogan').animate({right: "55%", top:"15%",fontSize: "4.5vw"});
     $('.services-list').animate({right: "57%", fontSize: "4vw"});
     $('.equalizer').animate({right: "68%",top:"70%", width:"10%",height: "13%"});
+    $('.navbar_company_section').animate({fontSize: "2rem"});
   }
 }
 // Check if the window changed size
