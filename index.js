@@ -14,23 +14,22 @@ function set_size(){
    if (wid > hei){ //This is wide screen
   $('.background-intro-img').width(wid);
   $('.background-intro-img').height(wid*0.6);
-  $('.tittle-text').animate({right: "8%"});
-  $('.top-right-slogan').animate({right: "13%", top:"20%",fontSize: "3vw"});
-  $('.services-list').animate({right: "19%", fontSize: "2vw"});
-  $('.equalizer').animate({right: "22%",top:"60%", width:"10%",height: "25%"});
-  $('.navbar_company_section').animate({fontSize: "1.5rem"});
+  $('.tittle-text').removeClass("tt-vertical").addClass("tt-wide");
+  $('.top-right-slogan').removeClass("trs-vertical").addClass("trs-wide");
+  $('.services-list').removeClass("sl-vertical").addClass("sl-wide");
+  $('.equalizer').removeClass("e-vertical").addClass("e-wide");
+  $('.navbar_company_section').removeClass("ncs-vertical").addClass("ncs-wide");
   console.log(" wide screen");
   }
   else{ // this vertical screen : this case shall crop the image from the right
     console.log("vertical screen");
     $('.background-intro-img').width(wid*2);
     $('.background-intro-img').height(wid*0.6*2);
-    $('.background-intro-img').attr("position","right");
-    $('.tittle-text').animate({right: "55%"});
-    $('.top-right-slogan').animate({right: "55%", top:"15%",fontSize: "4.5vw"});
-    $('.services-list').animate({right: "57%", fontSize: "4vw"});
-    $('.equalizer').animate({right: "68%",top:"70%", width:"10%",height: "13%"});
-    $('.navbar_company_section').animate({fontSize: "2rem"});
+    $('.tittle-text').removeClass("tt-wide").addClass("tt-vertical");
+    $('.top-right-slogan').removeClass("trs-wide").addClass("trs-vertical");
+    $('.services-list').removeClass("sl-wide").addClass("sl-vertical");
+    $('.equalizer').removeClass("e-wide").addClass("e-vertical");
+    $('.navbar_company_section').removeClass("ncs-wide").addClass("ncs-vertical");
   }
 }
 // Check if the window changed size
