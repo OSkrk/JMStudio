@@ -16,25 +16,28 @@
   font-size: 2rem;
 }
 
-.navbar_company_section{
-  font-size: 1.2rem;
+.ncs-vertical{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.ncs-wide{
+  font-size: 1.5rem;
   margin: 1rem;
 }
 
 /* intro */
 .introduction{
 background-color: black;
-position: relative;
-overflow: hidden;
+position: relative; /* This setting allows position referencing to all contained  elements*/
+overflow: hidden; /* This setting hides the contained elements that overflows the container */
 }
 
 .background-intro-img{
 filter: brightness(0.8) hue-rotate(6deg) opacity(0.99) contrast(1.3) sepia(0.17) saturate(1.4) grayscale(0.08);
-width: 1600px;
-height: 1000px;
 }
 
-.tittle-text {
+.tittle-text{
   position: absolute;
   top: 6%;
   right: 8%;
@@ -42,24 +45,46 @@ height: 1000px;
   text-align: right;
   font-size: 8vw;
 }
+.tt-vertical {
+right: 55%;
+}
+.tt-wide {
+right: 8%;
+}
 
 .top-right-slogan{
 position: absolute;
-  top: 20%;
-  right: 13%;
-  font-size: 3vw;
 }
+
+.trs-wide{
+top: 20%;
+right: 13%;
+font-size: 3vw;
+}
+
+.trs-vertical{
+right: 55%;
+top:15%;
+font-size:4.5vw;
+}
+
 .services-list{
-  line-height: 80px;
   list-style-type:none;
   font-family: 'Open Sans';
   font-weight:400;
-  font-size: 2vw;
   position: absolute;
   line-height: 260%;
-  top: 33%;
-  right: 19%;
   color:white;
+  top: 33%;
+}
+.sl-wide{
+right: 19%;
+font-size: 2vw;
+}
+
+.sl-vertical{
+right: 57%;
+font-size: 4vw;
 }
 
 .headphones{
@@ -68,12 +93,21 @@ position: absolute;
 
 .equalizer{
   position: absolute;
+}
+
+.e-wide{
   top: 60%;
   right: 22%;
   width:10%;
   height: 25%;
-
 }
+.e-vertical{
+right: 68%;
+top:70%;
+width:10%;
+height:13%;
+}
+
 h1 {
   font-family: 'Bebas Neue';
   font-weight: 400;
