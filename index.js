@@ -17,7 +17,7 @@ function set_size(){
   $('.tittle-text').removeClass("tt-vertical").addClass("tt-wide");
   $('.top-right-slogan').removeClass("trs-vertical").addClass("trs-wide");
   $('.services-list').removeClass("sl-vertical").addClass("sl-wide");
-  $('.equalizer').removeClass("e-vertical").addClass("e-wide");
+  $('.social-media').removeClass("sm-vertical").addClass("sm-wide");
   $('.navbar_company_section').removeClass("ncs-vertical").addClass("ncs-wide");
   console.log(" wide screen");
   }
@@ -28,7 +28,7 @@ function set_size(){
     $('.tittle-text').removeClass("tt-wide").addClass("tt-vertical");
     $('.top-right-slogan').removeClass("trs-wide").addClass("trs-vertical");
     $('.services-list').removeClass("sl-wide").addClass("sl-vertical");
-    $('.equalizer').removeClass("e-wide").addClass("e-vertical");
+    $('.social-media').removeClass("sm-wide").addClass("sm-vertical");
     $('.navbar_company_section').removeClass("ncs-wide").addClass("ncs-vertical");
   }
 }
