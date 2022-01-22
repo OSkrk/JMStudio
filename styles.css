@@ -11,6 +11,29 @@
   font-style: normal;
   font-weight:400;
 }
+
+h1 {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  color:white;
+}
+h2 {
+  font-family: 'agrandir';
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+h4 {
+  font-family: 'bellaboo';
+  font-weight: 700;
+  color:white;
+}
+
+p {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 25px;
+}
 /* navbar */
 .navbar_company_name{
   font-size: 2rem;
@@ -27,8 +50,7 @@
 }
 
 /* intro */
-.introduction{
-background-color: black;
+.home-container{
 position: relative; /* This setting allows position referencing to all contained  elements*/
 overflow: hidden; /* This setting hides the contained elements that overflows the container */
 }
@@ -36,11 +58,9 @@ overflow: hidden; /* This setting hides the contained elements that overflows th
 .background-intro-img{
 filter: brightness(0.8) hue-rotate(6deg) opacity(0.99) contrast(1.3) sepia(0.17) saturate(1.4) grayscale(0.08);
 }
-
 .tittle-text{
   position: absolute;
   top: 6%;
-  right: 8%;
   letter-spacing: 0.06em;
   text-align: right;
   font-size: 8vw;
@@ -99,7 +119,6 @@ font-size: 4vw;
 .sm_img{
 padding:10px;
 color: white;
-font-size: 1.5rem;
 }
 .social_icon {
   margin: 20px 10px;
@@ -107,11 +126,13 @@ font-size: 1.5rem;
 
 .sm-wide{
   top: 60%;
-  right: 13%;
+  right: 12%;
+  font-size: 1.2vw;
 }
 .sm-vertical{
 right: 50%;
 top:70%;
+font-size: 1.5rem;
 
 }
 
@@ -140,10 +161,10 @@ padding-right: 8%;
   padding-bottom: 5%;
 }
 .service_button{
-font-size: 24px;
+font-size: 130%;
 margin: 15px;
-width: 240px;
-height: 60px;
+width: 95%;
+height: 70px;
 }
 .sm-icons-services{
   text-align: center;
@@ -153,33 +174,29 @@ height: 60px;
   padding:10px;
   font-size: 1.5rem;
 }
-
-h1 {
-  font-family: 'Bebas Neue';
-  font-weight: 400;
-  color:white;
+/* biography */
+.bio-container{
+  position: relative; /* This setting allows position referencing to all contained  elements*/
+  overflow: hidden; /* This setting hides the contained elements that overflows the container */
 }
-h2 {
-  font-family: 'agrandir';
-  font-weight: 700;
+.bio-title{
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+  letter-spacing:1.5vw;
+  font-size: 350%;
+}
+.bio-description{
+  position: absolute;
+  top: 50%;
+  right: 5%;
   font-size: 2vw;
-}
-
-h4 {
-  font-family: 'bellaboo';
-  font-weight: 700;
-  color:white;
-}
-
-p {
-  font-family: 'DM Sans';
-  font-weight: 400;
-  font-size: 25px;
+  color: white;
 }
 
 
 .book_button{
   font-family: 'agrandir';
   font-size: 26px;
-
+  letter-spacing: 0.06em;
 }
