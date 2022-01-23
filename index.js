@@ -17,6 +17,13 @@ function set_size(){
   $('.background-intro-img').height(wid*0.6);
   $('.bio-background-img').width(wid);
   $('.bio-background-img').height(wid*0.55);
+
+  $('.production-container').width(wid);
+  $('.production-container').height(wid*0.6);
+
+  $('.production-background-img').width(wid*0.8);
+  $('.production-background-img').height(wid*0.71*0.8);
+
   $('.tittle-text').removeClass("tt-vertical").addClass("tt-wide");
   $('.top-right-slogan').removeClass("trs-vertical").addClass("trs-wide");
   $('.services-list').removeClass("sl-vertical").addClass("sl-wide");
@@ -29,6 +36,13 @@ function set_size(){
     $('.background-intro-img').height(wid*0.6*2);
     $('.bio-background-img').width(wid);
     $('.bio-background-img').height(wid*0.55);
+
+    $('.production-container').width(wid);
+    $('.production-container').height(wid*0.6);
+
+    $('.production-background-img').width(wid*0.8);
+    $('.production-background-img').height(wid*0.71*0.8);
+
     $('.tittle-text').removeClass("tt-wide").addClass("tt-vertical");
     $('.top-right-slogan').removeClass("trs-wide").addClass("trs-vertical");
     $('.services-list').removeClass("sl-wide").addClass("sl-vertical");
