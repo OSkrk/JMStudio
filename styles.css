@@ -150,7 +150,6 @@ padding-bottom: 10%;
   height: 300px;
   text-align: center;
   padding-bottom: 15px;
-
 }
 .services_description{
 text-align: left;
@@ -193,10 +192,57 @@ height: 70px;
   font-size: 2vw;
   color: white;
 }
+/* production */
+.production-container{
+  position: relative; /* This setting allows position referencing to all contained  elements*/
+  overflow: hidden; /* This setting hides the contained elements that overflows the container */
+  background-color: #1c1a17;
+  text-align: left;
 
+}
+.production-background-img{
+filter: contrast(87%) brightness(136%) saturate(126%) sepia(59%) grayscale(20%);
+position: absolute;
+bottom: 0;
+left: 30%;
+}
+
+.production_title{
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  top:10%;
+  right:50%;
+  z-index: 1;
+}
+.carousel-inner {
+  left: 30%;
+}
+.production_project_card{
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  width: 20%;
+  height: 40%;
+  padding-top: 20%;
+}
+.card-title{
+  font-family: 'DM Sans';
+  font-size: 2vw;
+}
+.card-text{
+font-family:  'Open Sans';
+font-size: 1.5vw;
+text-align: left;
+}
 
 .book_button{
-  font-family: 'agrandir';
-  font-size: 26px;
+  position: absolute;
   letter-spacing: 0.06em;
+  font-size: 1.4vw;
+  margin: 15px;
+  width: 15vw;
+  height: 4vw;
+  left: 11%;
+  top: 20%;
 }
