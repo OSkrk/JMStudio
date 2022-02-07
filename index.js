@@ -18,11 +18,14 @@ function set_size(){
   $('.bio-background-img').width(wid);
   $('.bio-background-img').height(wid*0.55);
 
-  $('.production-container').width(wid);
-  $('.production-container').height(wid*0.6);
 
-  $('.production-background-img').width(wid*0.8);
-  $('.production-background-img').height(wid*0.71*0.8);
+  $('.production-background-img').removeClass("pbi-vertical").addClass("pbi-wide");
+  $('.production-container').removeClass("pc-vertical").addClass("pc-wide");
+  $('.production_project_card').removeClass("ppc-vertical").addClass("ppc-wide");
+
+$('.book_button').removeClass("book_button-vertical").addClass("book_button-wide");
+
+$('.card-text').removeClass(".card-text-vertical").addClass(".card-text-wide");
 
   $('.tittle-text').removeClass("tt-vertical").addClass("tt-wide");
   $('.top-right-slogan').removeClass("trs-vertical").addClass("trs-wide");
@@ -30,26 +33,32 @@ function set_size(){
   $('.social-media').removeClass("sm-vertical").addClass("sm-wide");
   $('.navbar_company_section').removeClass("ncs-vertical").addClass("ncs-wide");
 
+console.log( "wide  widith: " + wid + " height: " + hei + " ratio: " + wid/hei);
   }
   else{ // this vertical screen : this case shall crop the image from the right
     $('.background-intro-img').width(wid*2);
     $('.background-intro-img').height(wid*0.6*2);
-    $('.bio-background-img').width(wid);
-    $('.bio-background-img').height(wid*0.55);
+    $('.bio-background-img').width(wid*2);
+    $('.bio-background-img').height(wid*0.55*2);
 
-    $('.production-container').width(wid);
-    $('.production-container').height(wid*0.6);
+    $('.production-container').removeClass("pc-wide").addClass("pc-vertical");
 
-    $('.production-background-img').width(wid*0.8);
-    $('.production-background-img').height(wid*0.71*0.8);
+    $('.production-background-img').removeClass("pbi-wide").addClass("pbi-vertical");
+    $('.production_project_card').removeClass("ppc-wide").addClass("ppc-vertical");
+
+    $('.book_button').removeClass("book_button-wide").addClass("book_button-vertical");
+
+$('.card-text').removeClass(".card-text-wide").addClass(".card-text-vertical");
 
     $('.tittle-text').removeClass("tt-wide").addClass("tt-vertical");
     $('.top-right-slogan').removeClass("trs-wide").addClass("trs-vertical");
     $('.services-list').removeClass("sl-wide").addClass("sl-vertical");
     $('.social-media').removeClass("sm-wide").addClass("sm-vertical");
     $('.navbar_company_section').removeClass("ncs-wide").addClass("ncs-vertical");
+
+    console.log( "vertical widith: " + wid + " height: " + hei + "ratio: " + wid/hei);
   }
-  console.log( "widith: " + wid + " height: " + hei + "ratio: " + wid/hei);
+
 }
 // Check if the window changed size
   $( window ).resize(function() {
