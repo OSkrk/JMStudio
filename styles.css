@@ -198,13 +198,31 @@ height: 70px;
   overflow: hidden; /* This setting hides the contained elements that overflows the container */
   background-color: #1c1a17;
   text-align: left;
-
+}
+.pc-vertical{
+width: 100vw;
+height:120vw;
+}
+.pc-wide{
+width: 100vw;
+height: 100vh;
 }
 .production-background-img{
 filter: contrast(87%) brightness(136%) saturate(126%) sepia(59%) grayscale(20%);
 position: absolute;
 bottom: 0;
-left: 30%;
+}
+.pbi-vertical{
+  width: 60vw;
+  height: 43vw;
+  left: 30%;
+}
+.pbi-wide{
+  width: 60vw;
+  height: 43vw;
+  left: 30%;
+  /* $('.production-background-img').width(wid*0.8);
+  $('.production-background-img').height(wid*0.71*0.8); */
 }
 
 .production_title{
@@ -222,18 +240,30 @@ left: 30%;
   text-align: center;
   background-color: transparent;
   color: white;
+
+}
+.ppc-wide{
   width: 20%;
   height: 40%;
-  padding-top: 20%;
+  padding-top: 12%;
 }
-.card-title{
-  font-family: 'DM Sans';
-  font-size: 2vw;
+
+.ppc-vertical{
+  width: 45%;
+  height: 95%;
+  padding-top: 30%;
 }
+
 .card-text{
 font-family:  'Open Sans';
-font-size: 1.5vw;
 text-align: left;
+}
+
+.card-text-vertical{
+font-size: 2.5vh;
+}
+.card-text-wide{
+font-size: 0.1vw;
 }
 
 .book_button{
@@ -241,8 +271,36 @@ text-align: left;
   letter-spacing: 0.06em;
   font-size: 1.4vw;
   margin: 15px;
-  width: 15vw;
+  /* width: 15vw;
   height: 4vw;
-  left: 11%;
-  top: 20%;
+  right: 11%;
+  top: 10%; */
+
+
+}
+.book_button-wide{
+  width: 16vw;
+  height: 3.5vw;
+  right: 11%;
+  top: 9%;
+  font-size: 1.5vw;
+}
+.book_button-vertical{
+  width: 20vw;
+  height: 5vw;
+  right: 11%;
+  top: 9%;
+  font-size: 2vw;
+}
+/* Academia section */
+.booking_div{
+  position: relative;
+}
+.class_booking{
+  position: absolute;
+  width: 10vh;
+  height: 2.5vh;
+  font-size: 2vw;
+  left:40%;
+  top:20%;
 }
