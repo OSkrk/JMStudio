@@ -25,7 +25,9 @@ function set_size(){
 
 $('.book_button').removeClass("book_button-vertical").addClass("book_button-wide");
 
-$('.card-text').removeClass(".card-text-vertical").addClass(".card-text-wide");
+$('.card-text').removeClass("card-text-vertical").addClass("card-text-wide");
+
+$('.button_course_booking').removeClass(".button_course_booking-vertical").addClass(".button_course_booking-wide");
 
   $('.tittle-text').removeClass("tt-vertical").addClass("tt-wide");
   $('.top-right-slogan').removeClass("trs-vertical").addClass("trs-wide");
@@ -48,7 +50,9 @@ console.log( "wide  widith: " + wid + " height: " + hei + " ratio: " + wid/hei);
 
     $('.book_button').removeClass("book_button-wide").addClass("book_button-vertical");
 
-$('.card-text').removeClass(".card-text-wide").addClass(".card-text-vertical");
+$('.card-text').removeClass("card-text-wide").addClass("card-text-vertical");
+
+$('.button_course_booking').removeClass(".button_course_booking-wide").addClass(".button_course_booking-vertical");
 
     $('.tittle-text').removeClass("tt-wide").addClass("tt-vertical");
     $('.top-right-slogan').removeClass("trs-wide").addClass("trs-vertical");
